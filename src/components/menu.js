@@ -1,10 +1,9 @@
-import Birthday from '../data';
-import {useState} from 'react';
-import List from './List';
+import Display from './display';
+
 const Menu = () => {
     return(
-        <div>
-        <List/>
+        <div className="menu">
+            <Display />
         </div>
         
     )
