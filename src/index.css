@@ -9,21 +9,20 @@ body{
 .menu{
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(61, 22, 78);
     border-radius: 20px;
     max-width: 70vw;
     height:65vh;
     margin-top:12vh;
-    overflow: scroll;
+    overflow-x: hidden;
     width: 700px;
 }
 
 .element{
-    border-bottom: 3px solid rgb(0, 0, 0) ;
-    border-top:3px solid rgb(0, 0, 0) ;
+    border-bottom: 5px solid rgb(88, 31, 119) ;
+    border-left:5px solid rgb(88, 31, 119) ;
     border-radius:20px;
     background-image: linear-gradient(rgb(241, 241, 241), rgb(168, 168, 168));
-    max-height: 250px;
+    height: 250px;
     margin-bottom: 45px;
     width:600px; 
     margin-left: auto;
@@ -33,20 +32,23 @@ body{
 .element h4{
     font-size: 32px;
     margin-left: 40px;
+    position: relative;
+    top:40px;
 }
 .element h1{
     font-size: 44px;
     margin-left: 40px;
+    position: relative;
+    top:40px;
 }
 
 .profile{
-    height: 200px;
-    width:190px;
+    height:200px;
+    width:180px;
     margin-left:auto;
     margin-right:65px;
     position: relative;
-    top:-215px;
-   
+    top:-185px;
 }
 
 img{
@@ -55,13 +57,80 @@ img{
 }
 
 .header{
-    font-size:86px;
+    font-size:82px;
     position: relative;
-    top:60px;
-    color:white;
+    top:80px;
+    color:transparent;
+    background: linear-gradient(rgb(255, 255, 255), rgb(129, 128, 129));
+    background-clip: text;
+    border-radius: 20px;
+    width:80vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main{
     text-align: center;   
 }
 
+@media screen and (min-device-width:1020px){
+    .header{
+        font-size: 50px;
+        top:30px;
+        width: 50vw;
+    }
+
+    img{
+        height:130px;
+        width: 120px;
+    }
+
+    .element{
+        width: 450px;
+        height: 200px;
+    }
+
+    .profile{
+        height: 160px;
+        width: 150px;
+        margin-left:auto;
+        margin-right:65px;
+        position: relative;
+        top:-107px;
+        left:40px; 
+    }
+
+    .element h4{
+        font-size: 20px;
+        position: relative;
+        top: 40px;
+    }
+
+    .element h1{
+        font-size: 28px;
+        position: relative;
+        top:40px;
+    }
+    .menu{
+      max-width: 550px;  
+    }
+    
+}
+
+@media screen and (min-device-width: 1200px){
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background:rgb(91, 50, 145);
+    }
+    
+    ::-webkit-scrollbar-thumb:hover{
+        background:linear-gradient(rgb(91, 50, 145),indigo);
+    }
+
+    .header{
+        width: 60vw;
+    }
+
+}
