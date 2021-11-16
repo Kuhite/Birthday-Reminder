@@ -1,8 +1,8 @@
 import Element from './Element';
-import Birthday from '../data';
-const Display = () => {
+const Display = ({array}) => {
+    
     return(
-        Birthday.map((x) =>{
+        array.map((x) =>{
             const date = new Date()
             var year = date.getFullYear();
             var age = year - x.Year;
