@@ -8,7 +8,7 @@ body{
 .form{
     text-align: center;
     position: relative;
-    top:50px;
+    top:150px;
 }
 .menu{
     margin-left: auto;
@@ -78,6 +78,51 @@ img{
     text-align: center;   
 }
 
+h2{
+   position: relative;
+   font-size: 57px;
+   left:40px;
+   color:rgb(196, 195, 195); 
+   background-color: transparent;
+ 
+
+   
+}
+
+#Months{
+    margin-right: 5px ;
+    width: 370px;
+    height: 55x;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 12px;
+    border: 1px solid rgb(48, 23, 56); 
+}
+
+.select-items{
+    margin-right: 5px ;
+    width: 30px;
+    height: 55x;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+button{
+    position: relative;
+    top: -5px;
+    right:-50px;
+    height:55px;
+    width:200px;
+    font-size: 40px;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:rgb(55, 9, 70); 
+    color:white;
+    border:1px solid rgb(57, 0, 75)
+}
+
+
 @media screen and (min-device-width:1020px){
     .header{
         font-size: 50px;
@@ -85,6 +130,25 @@ img{
         width: 50vw;
     }
 
+    #form{
+        position: relative;
+        top: 70px;
+    }
+    
+    #Months{
+        width:300px;
+        height:40px;
+        font-size: 25px;
+
+    }
+
+    button{
+        width:160px;
+        height:40px;
+        font-size: 30px;
+        position: inherit;
+        top:5px;
+    }
     img{
         height:130px;
         width: 120px;
@@ -103,6 +167,10 @@ img{
         position: relative;
         top:-107px;
         left:40px; 
+    }
+
+    h2{
+        font-size: 40px;
     }
 
     .element h4{
@@ -136,6 +204,10 @@ img{
 
     .header{
         width: 60vw;
+    }
+
+    h2{
+        font-size: 40px;
     }
 
 }
